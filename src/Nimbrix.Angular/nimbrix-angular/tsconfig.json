@@ -1,0 +1,66 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "paths": {
+      "nimbrix-angular-core": [
+        "./dist/nimbrix-angular-core"
+      ],
+      "nimbrix-angular-cqrs": [
+        "./dist/nimbrix-angular-cqrs"
+      ],
+      "nimbrix-angular-testing": [
+        "./dist/nimbrix-angular-testing"
+      ],
+      "nimbrix-angular-ui": [
+        "./dist/nimbrix-angular-ui"
+      ]
+    },
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "typeCheckHostBindings": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/nimbrix-angular-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-cqrs/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-cqrs/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-ui/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-testing/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/nimbrix-angular-testing/tsconfig.spec.json"
+    }
+  ]
+}

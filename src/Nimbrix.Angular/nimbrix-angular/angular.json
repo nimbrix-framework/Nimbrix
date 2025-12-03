@@ -1,0 +1,111 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "nimbrix-angular-core": {
+      "projectType": "library",
+      "root": "projects/nimbrix-angular-core",
+      "sourceRoot": "projects/nimbrix-angular-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nimbrix-angular-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nimbrix-angular-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/nimbrix-angular-core/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "nimbrix-angular-cqrs": {
+      "projectType": "library",
+      "root": "projects/nimbrix-angular-cqrs",
+      "sourceRoot": "projects/nimbrix-angular-cqrs/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nimbrix-angular-cqrs/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nimbrix-angular-cqrs/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/nimbrix-angular-cqrs/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "nimbrix-angular-ui": {
+      "projectType": "library",
+      "root": "projects/nimbrix-angular-ui",
+      "sourceRoot": "projects/nimbrix-angular-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nimbrix-angular-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nimbrix-angular-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/nimbrix-angular-ui/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "nimbrix-angular-testing": {
+      "projectType": "library",
+      "root": "projects/nimbrix-angular-testing",
+      "sourceRoot": "projects/nimbrix-angular-testing/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nimbrix-angular-testing/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nimbrix-angular-testing/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/nimbrix-angular-testing/tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}
