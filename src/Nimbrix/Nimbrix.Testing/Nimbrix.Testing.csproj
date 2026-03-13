@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Nimbrix.AspDotNet\Nimbrix.AspDotNet.csproj" />
+      <ProjectReference Include="..\Nimbrix.CQRS\Nimbrix.CQRS.csproj" />
+      <ProjectReference Include="..\Nimbrix.Logging\Nimbrix.Logging.csproj" />
+      <ProjectReference Include="..\Nimbrix.Persistence\Nimbrix.Persistence.csproj" />
+      <ProjectReference Include="..\Nimbrix\Nimbrix.csproj" />
+    </ItemGroup>
+
+</Project>

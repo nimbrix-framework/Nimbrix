@@ -1,0 +1,6 @@
+@Nimbrix.Samples_HostAddress = http://localhost:5094
+
+GET {{Nimbrix.Samples_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
